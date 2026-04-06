@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>简单博客网站</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <h1>我的简单博客</h1>
+      <p>记录学习、技术与生活的小站。</p>
+      <div class="hero__search">
+        <input id="searchInput" type="search" placeholder="搜索文章标题或标签..." aria-label="搜索文章" />
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="posts" id="postList" aria-live="polite"></section>
+
+    <aside class="sidebar">
+      <div class="card">
+        <h2>关于我</h2>
+        <p>你好，我是一个热爱编程的人，喜欢把踩坑与经验写下来。</p>
+      </div>
+      <div class="card">
+        <h2>标签</h2>
+        <div id="tagList" class="tags"></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 我的简单博客 · 使用原生 HTML/CSS/JS 构建</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
